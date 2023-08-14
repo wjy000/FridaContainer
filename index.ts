@@ -8,7 +8,7 @@
 import {DMLog} from "./utils/dmlog";
 import {FCCommon} from "./utils/FCCommon";
 // import {DianPing} from "./agent/dp/dp";
-import {FCAnd} from "./utils/FCAnd";
+import HookCheck from "./src/HookCheck";
 
 function main() {
     DMLog.d('MAIN', 'HELLO FridaContainer, please add code on the index.ts');
@@ -49,6 +49,8 @@ function main() {
     //         });
     //     }
     // }
+
+    HookCheck.hook();
 }
 
 if (Java.available) {
